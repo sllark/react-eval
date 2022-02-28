@@ -1,0 +1,88 @@
+.counter{
+  max-width: 76.6rem;
+  width: 90%;
+  padding: 5.6rem 7rem 6rem;
+
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 1.1;
+
+  box-shadow: 0 4px 16px rgba(6, 16, 55, 0.04);
+  border-radius: 3px;
+
+  position: relative;
+
+
+  & > *{
+    z-index: 10;
+  }
+
+  .bgWhite{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 5;
+  }
+
+  .bgBox{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+  }
+
+  .bgLeftBox{
+    top: 66%;
+    left: -8%;
+
+    background-image: url("../../img/bg-left-box.svg");
+    transform: rotateY(180deg);
+  }
+
+  .bgRightBox{
+    top: -25%;
+    right: -2%;
+
+    background-image: url("../../img/bg-left-box.svg");
+
+    //TODO: Change image
+    transform: rotate(180deg);
+
+  }
+
+
+  //TODO: Add Inter font
+  &__ele{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    &__content{
+      font-size: 6.4rem;
+      font-weight: 600;
+
+      margin-bottom: 0.8rem;
+    }
+
+    &__subtitle{
+      font-size: 1.8rem;
+    }
+  }
+
+  &__separator{
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+}
+
+
